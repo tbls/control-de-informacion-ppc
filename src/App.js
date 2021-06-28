@@ -1,15 +1,15 @@
 import React from 'react'
 import Routes from './Routes';
-import {BrowserRouter as Router, Switch} from 'react-router-dom'
+import {BrowserRouter, Switch} from 'react-router-dom'
 
 function App() {
   return (
-    <div className='conatiner p-3'>
-      <Router>
+    <div className='container p-1'>
+      <BrowserRouter>
         <Switch>
           <Routes/>
         </Switch>
-      </Router>
+      </BrowserRouter>
     </div>
   );
 }

@@ -58,7 +58,7 @@ function CrearPendienteView() {
         showConfirmButton:false,
         timer:2000
       })
-      history.push('/')
+      history.push('/listarpendientes')
     } catch (error) {
       console.log(error)
     }
