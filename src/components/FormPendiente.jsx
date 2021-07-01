@@ -11,7 +11,7 @@ function FormPendiente({valor, actualizarInput,manejarSubmit,sistemas}) {
         <label className="form-label" >Sistema</label>
           <select 
             className="form-control"
-            name="sistema_id"
+            name="sistema_nombre"
             value={valor.sistema_nombre}
             onChange={(e)=>{actualizarInput(e)}}
           >
@@ -42,8 +42,7 @@ function FormPendiente({valor, actualizarInput,manejarSubmit,sistemas}) {
             onChange={(e)=>{actualizarInput(e)}}
           />
         </div>
-      
-       
+
 
         <div className="mb-3 col-5">
           <label className="form-label" >Método de Intervención</label>
@@ -133,8 +132,6 @@ function FormPendiente({valor, actualizarInput,manejarSubmit,sistemas}) {
             onChange={(e)=>{actualizarInput(e)}}
           />
         </div>
-
-   
 
         <div className="d-grid  col-6">
           <button type="submit" className="btn btn-primary mt-2">

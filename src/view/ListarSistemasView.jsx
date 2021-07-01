@@ -29,17 +29,18 @@ function ListarSistemasVIew() {
       <table className='table'>
         <thead>
           <tr>
+            <th>Item</th>
             <th>Nombre</th>
           </tr>
         </thead>
         <tbody>
           {sistemas.map((sist,i) => (
             <tr key={i}>
+              <td>{i+1}</td>
               <td>{sist.nombre}</td> 
-              <td>
-
-                {/* <Link className="btn btn-warning btn-sm" to={`/editarsistema/${pend.id}`}>Editar</Link> */}
-              </td>
+              {/* <td>
+                <Link className="btn btn-warning btn-sm" to={`/editarsistema/${pend.id}`}>Editar</Link>
+              </td> */}
             </tr>
           ))}
         </tbody>

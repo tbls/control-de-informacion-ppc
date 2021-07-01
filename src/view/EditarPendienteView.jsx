@@ -11,7 +11,7 @@ function EditarProductoView() {
   let {id} = useParams()
   
   const [valor, setValor] = useState({
-    sistema_id:1,
+    sistema_nombre:'',
     equipo_instrumento:'',
     motivo_descripcion:'',
     metodo_de_intervencion:'',

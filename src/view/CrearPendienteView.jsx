@@ -8,7 +8,7 @@ import{obtenerSistemas} from '../services/sistemaService'
 function CrearPendienteView() {
 
   const [valor, setValor] = useState({
-    sistema_id:1,
+    sistema_nombre:'',
     equipo_instrumento:'',
     motivo_descripcion:'',
     metodo_de_intervencion:'',
@@ -27,6 +27,7 @@ function CrearPendienteView() {
   const history = useHistory()
 
   const actualizarInput = (e) => {
+    e.preventDefault()
     setValor({
       ...valor,
       [e.target.name]:e.target.value
@@ -44,14 +45,15 @@ function CrearPendienteView() {
 
   useEffect(()=>{
     getSistemas()
-    {valor.estado = "pendiente"}
+    {
+      valor.estado = "pendiente"
+    }
   },[])
 
   const manejarSubmit = async (e) => {
     e.preventDefault()
     try {
       await crearPendiente({...valor})
-  
       await Swal.fire({
         icon:'success',
         title:'Pendiente agregado correctamente',

@@ -44,6 +44,14 @@ const obtenerPendientePorId = async (id) => {
   }
 }
 
+const eliminarPendiente = async (id) => {
+  try {
+    
+  } catch (error) {
+    
+  }
+}
+
 
 export {
   obtenerPendientes,
