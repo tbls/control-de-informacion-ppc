@@ -7,7 +7,7 @@ function FormPendiente({valor, actualizarInput,manejarSubmit,sistemas}) {
 
       <div className="row justify-content-center">
 
-        <div className="mb-3 col-5">
+        <div className="mb-3 col-md-5">
         <label className="form-label" >Sistema</label>
           <select 
             className="form-control"
@@ -21,7 +21,7 @@ function FormPendiente({valor, actualizarInput,manejarSubmit,sistemas}) {
           </select>
         </div>
 
-        <div className="mb-3 col-5">
+        <div className="mb-3 col-md-5">
           <label className="form-label" >Equipo / Instrumento</label>
           <input 
             type="text" 
@@ -32,7 +32,7 @@ function FormPendiente({valor, actualizarInput,manejarSubmit,sistemas}) {
           />
         </div>
 
-        <div className="mb-3 col-10">
+        <div className="mb-3 col-md-10">
           <label className="form-label" >Motivo / Descripción</label>
           <input
             type="text" 
@@ -44,7 +44,7 @@ function FormPendiente({valor, actualizarInput,manejarSubmit,sistemas}) {
         </div>
 
 
-        <div className="mb-3 col-5">
+        <div className="mb-3 col-md-5">
           <label className="form-label" >Método de Intervención</label>
           <select 
             className="form-control" 
@@ -60,7 +60,7 @@ function FormPendiente({valor, actualizarInput,manejarSubmit,sistemas}) {
           </select>
         </div>
 
-        <div className="mb-3 col-5">
+        <div className="mb-3 col-md-5">
           <label className="form-label" >Criticidad</label>
           <select 
             className="form-control" 
@@ -74,7 +74,7 @@ function FormPendiente({valor, actualizarInput,manejarSubmit,sistemas}) {
           </select>
         </div>
 
-        <div className="mb-3 col-5">
+        <div className="mb-3 col-md-5">
           <label className="form-label" >Especialidad</label>
           <select 
             className="form-control" 
@@ -89,7 +89,7 @@ function FormPendiente({valor, actualizarInput,manejarSubmit,sistemas}) {
           </select>
         </div>
 
-        <div className="mb-3 col-5">
+        <div className="mb-3 col-md-5">
           <label className="form-label" >Fecha de Detección</label>
           <input 
             type="date" 
@@ -100,8 +100,8 @@ function FormPendiente({valor, actualizarInput,manejarSubmit,sistemas}) {
           />
         </div>
 
-        <div className="mb-3 col-5">
-          <label className="form-label" >Reportadoo por</label>
+        <div className="mb-3 col-md-5">
+          <label className="form-label" >Reportado por</label>
           <input 
             type="text" 
             className="form-control" 
@@ -111,7 +111,7 @@ function FormPendiente({valor, actualizarInput,manejarSubmit,sistemas}) {
           />
         </div>
 
-        <div className="mb-3 col-5">
+        <div className="mb-3 col-md-5">
           <label className="form-label" >Número de Aviso</label>
           <input
             type="text" 
@@ -122,7 +122,7 @@ function FormPendiente({valor, actualizarInput,manejarSubmit,sistemas}) {
           />
         </div>
 
-        <div className="mb-3 col-10">
+        <div className="mb-3 col-md-10">
           <label className="form-label" >Comentarios</label>
           <input 
             type="text" 
@@ -133,7 +133,7 @@ function FormPendiente({valor, actualizarInput,manejarSubmit,sistemas}) {
           />
         </div>
 
-        <div className="d-grid  col-6">
+        <div className="d-grid  col-md-10">
           <button type="submit" className="btn btn-primary mt-2">
             Guardar
           </button>

@@ -58,76 +58,76 @@ function LoginView() {
   }
   }
 
-  return (
-    <div className="container m-5">
-              <div className="row">
-                <form onSubmit={(e)=>{iniciarSesion(e)}}>
-                  <div className="row">
-                    <label htmlFor='username'>Usuario</label>
-                    <input
-                      type="text" 
-                      name="username" 
-                      id="username"
-                      value={valor.username}
-                      onChange={(e)=>{actualizarInput(e)}}
-                      className="form-control"
-                    />
-                  </div>
-                  <div className="row">
-                    <label htmlFor='password'>Password</label>
-                    <input 
-                      type="password" 
-                      name="password" 
-                      id="password" 
-                      value={valor.password}
-                      onChange={(e)=>{actualizarInput(e)}}
-                      className="form-control" 
-                    />
-                  </div>
-                  <div className="row">
-                    <button type='submit'>Ingresar</button>
-                  </div>
-                </form>
-              </div>
-    </div>
-  )
-
   // return (
-  //   <body className=" container text-center col-lg-6">
-  //       <main className="form-signin">
-  //           <form on onSubmit={(e)=>{iniciarSesion(e)}}>
-  //               <h1 className="h3 mb-3 fw-normal">Ingresar al sistema</h1>
-  //               <div className="form-floating">
-  //                   <input type="text" className="form-control" 
-  //                       placeholder="exampleUser"
-  //                       name='username'
-  //                       value={valor.username}
-  //                       onChange={(e)=>{actualizarInput(e)}}  
-  //                     />
-  //                   <label htmlFor="floatingInput">Usuario</label>
-  //               </div>
-  //               <div className="form-floating">
-  //                   <input type="password" className="form-control"
-  //                   placeholder="Password"
-  //                   name='password'
-  //                   value={valor.password}
-  //                   onChange={(e)=>{actualizarInput(e)}}  
+  //   <div className="container m-5">
+  //             <div className="row">
+  //               <form onSubmit={(e)=>{iniciarSesion(e)}}>
+  //                 <div className="row">
+  //                   <label htmlFor='username'>Usuario</label>
+  //                   <input
+  //                     type="text" 
+  //                     name="username" 
+  //                     id="username"
+  //                     value={valor.username}
+  //                     onChange={(e)=>{actualizarInput(e)}}
+  //                     className="form-control"
   //                   />
-  //                   <label htmlFor="floatingPassword">Contraseña</label>
-  //               </div>
-  //               {/* <div class="checkbox mb-3">
-  //                   <label>
-  //                   <input type="checkbox" value="remember-me"/> 
-  //                   Recuerdame
-  //                   </label>
-  //               </div> */}
-  //               <button className="w-100 btn btn-lg btn-primary"
-  //                 type="submit">Ingresar</button>
-  //                 <p className="mt-5 mb-3 text-muted">© 2021–20XX</p>
-  //           </form>
-  //       </main>
-  //   </body>
-  //)
+  //                 </div>
+  //                 <div className="row">
+  //                   <label htmlFor='password'>Password</label>
+  //                   <input 
+  //                     type="password" 
+  //                     name="password" 
+  //                     id="password" 
+  //                     value={valor.password}
+  //                     onChange={(e)=>{actualizarInput(e)}}
+  //                     className="form-control" 
+  //                   />
+  //                 </div>
+  //                 <div className="row">
+  //                   <button type='submit'>Ingresar</button>
+  //                 </div>
+  //               </form>
+  //             </div>
+  //   </div>
+  // )
+
+  return (
+    <body className=" container text-center col-lg-6 pt-5">
+        <main className="form-signin">
+            <form on onSubmit={(e)=>{iniciarSesion(e)}}>
+                <h1 className="h3 mb-3 fw-normal">Ingresar al sistema</h1>
+                <div className="form-floating">
+                    <input type="text" className="form-control" 
+                        placeholder="exampleUser"
+                        name='username'
+                        value={valor.username}
+                        onChange={(e)=>{actualizarInput(e)}}  
+                      />
+                    <label htmlFor="floatingInput">Usuario</label>
+                </div>
+                <div className="form-floating">
+                    <input type="password" className="form-control"
+                    placeholder="Password"
+                    name='password'
+                    value={valor.password}
+                    onChange={(e)=>{actualizarInput(e)}}  
+                    />
+                    <label htmlFor="floatingPassword">Contraseña</label>
+                </div>
+                {/* <div class="checkbox mb-3">
+                    <label>
+                    <input type="checkbox" value="remember-me"/> 
+                    Recuerdame
+                    </label>
+                </div> */}
+                <button className="w-100 btn btn-lg btn-primary"
+                  type="submit">Ingresar</button>
+                  <p className="mt-5 mb-3 text-muted">© 2021–20XX</p>
+            </form>
+        </main>
+    </body>
+  )
 
 }
 
