@@ -96,8 +96,8 @@ function LoginView() {
     <body className=" container text-center col-lg-6 pt-5">
         <main className="form-signin">
             <form on onSubmit={(e)=>{iniciarSesion(e)}}>
-                <h1 className="h3 mb-3 fw-normal">Ingresar al sistema</h1>
-                <div className="form-floating">
+                <h1 className="h3 mb-3 fw-normal mb-4">Ingresar al sistema</h1>
+                <div className="form-floating mb-3">
                     <input type="text" className="form-control" 
                         placeholder="exampleUser"
                         name='username'
@@ -106,7 +106,7 @@ function LoginView() {
                       />
                     <label htmlFor="floatingInput">Usuario</label>
                 </div>
-                <div className="form-floating">
+                <div className="form-floating mb-3">
                     <input type="password" className="form-control"
                     placeholder="Password"
                     name='password'

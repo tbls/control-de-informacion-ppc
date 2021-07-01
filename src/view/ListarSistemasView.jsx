@@ -22,7 +22,7 @@ function ListarSistemasVIew() {
 
   return (
     <div>
-      <h1>Lista de Sistemas</h1>
+      <h1 className='mt-2'>Lista de Sistemas</h1>
       <Link className="btn btn-primary btn-lg my-2" to="/crearsistema">
         Agregar Sistema
       </Link>

@@ -24,7 +24,7 @@ function ListaPendientesVIew() {
   return (
   
     <div>
-      <h1>Lista de Pendientes</h1>
+      <h1 className='mt-2'>Lista de Pendientes</h1>
       <div className='d-flex justify-content-between'>
       <Link className="btn btn-primary btn-lg my-2" to="/crearpendiente">
         Agregar Pendiente
